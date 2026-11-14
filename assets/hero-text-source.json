@@ -1,0 +1,13 @@
+{
+  "source": "https://757.team/",
+  "checked": "2026-11-13",
+  "phrases": [
+    "мотокоманда из Лобни",
+    "мотомагазин из Лобни",
+    "мотосервис из Лобни"
+  ],
+  "displayDuration": 2200,
+  "hideDuration": 600,
+  "entranceDuration": 700,
+  "reference": "research/original-home.html, initChangingText"
+}
