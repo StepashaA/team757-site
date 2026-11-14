@@ -17,3 +17,24 @@
 @media(min-width:900px){.featured-products.fresh-drop-track{gap:24px}.fresh-drop-track>.product-card{flex-basis:calc((100% - 48px)/3)}}
 @media(max-width:359px){.drop-footer{font-size:9px;gap:7px}.drop-collections{gap:9px}.fresh-drop-title{font-size:40px}}
 @media(prefers-reduced-motion:reduce){.featured-products.fresh-drop-track{scroll-behavior:auto}}
+
+/* Catalog refinements: comfortable touch targets and a size list contained in its form. */
+.favorite-toggle{width:44px;height:44px}
+.add-button,.catalog-grid .add-button{width:44px;min-width:44px;height:44px;flex-shrink:0}
+.small-button{min-width:44px;height:44px}
+.product-info>a:first-child{min-width:0;overflow-wrap:anywhere}
+.footer-links a,.contact-details a{display:inline-flex;align-items:center;min-height:44px}
+.footer-links>div{flex-wrap:wrap;column-gap:14px;row-gap:0}
+.contact-details a{display:flex;padding-block:8px}
+.contact-details summary{min-height:44px;line-height:44px}
+.drop-collections a{display:inline-flex;align-items:center;min-height:44px}
+#size-checkboxes{left:auto;right:0;max-width:calc(100vw - 32px)}
+.filters .filter-disclosure .check,#reset-filters{min-height:44px}
+@media(max-width:699px){
+  .catalog-grid .product-info{display:grid;grid-template-columns:minmax(0,1fr) 44px;align-items:start}
+  .filter-disclosure[open]{flex-basis:100%;min-width:0}
+  #size-checkboxes{position:static;width:100%;max-width:100%;margin-top:8px;box-shadow:none}
+  .footer-links,.contact-details,.drop-footer,.collection-switch{font-size:12px}
+  .drop-footer{flex-wrap:wrap}
+  .drop-collections{flex-wrap:wrap;gap:0 14px}
+}
